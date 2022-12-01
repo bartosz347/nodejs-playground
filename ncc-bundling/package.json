@@ -1,0 +1,21 @@
+{
+  "name": "ncc-bundling",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ncc run index.ts",
+    "build": "ncc build index.ts -m -o dist"
+  },
+  "dependencies": {
+    "lodash.kebabcase": "^4.1.1"
+  },
+  "devDependencies": {
+    "@types/lodash.kebabcase": "^4.1.7",
+    "@vercel/ncc": "latest",
+    "typescript": "^4.9.3"
+  },
+  "author": "",
+  "license": "MIT"
+}
