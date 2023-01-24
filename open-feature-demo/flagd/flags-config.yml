@@ -1,0 +1,23 @@
+flags:
+  meowAtStartFlag:
+    state: ENABLED
+    variants:
+      'on': true
+      'off': false
+    defaultVariant: 'on'
+  fontSizeFlag:
+    state: ENABLED
+    variants:
+      defaultSize: 20
+      smallSize: 14
+      largeSize: 25
+    defaultVariant: defaultSize
+    targeting:
+      if:
+        - "<":
+            - var: [age]
+            - 40
+        - smallSize
+        - largeSize
+"$evaluators":
+
