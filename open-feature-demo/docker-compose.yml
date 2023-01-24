@@ -1,0 +1,16 @@
+services:
+  flagd:
+    image: ghcr.io/open-feature/flagd:latest
+    container_name: flagd
+    command: start
+    environment:
+      - FLAGD_URI=file:/flags-config.yml
+    volumes:
+      - ./flagd/flags-config.yml:/flags-config.yml
+    ports:
+      - 127.0.0.1:8013:8013
+    networks:
+      - net
+
+networks:
+  net:
