@@ -1,0 +1,21 @@
+{
+  "name": "esbuild-bundling",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "tsc --noEmit",
+    "build": "esbuild index.ts --bundle --platform=node --target=node16 --minify --outdir=dist"
+  },
+  "dependencies": {
+    "esbuild": "0.17.8",
+    "lodash.kebabcase": "^4.1.1"
+  },
+  "devDependencies": {
+    "@types/lodash.kebabcase": "^4.1.7",
+    "typescript": "^4.9.3"
+  },
+  "author": "",
+  "license": "MIT"
+}
