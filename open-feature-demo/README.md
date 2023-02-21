@@ -7,6 +7,9 @@
 
 Source: [https://openfeature.dev](https://openfeature.dev)
 
+Several commercial feature-flag service providers created OpenFeature provider for their service, more information
+is [available here](https://docs.openfeature.dev/docs/reference/technologies/server/javascript).
+
 The aim of this demo is to demonstrate how OpenFeature can be used to work with feature flags in a Node.js application.
 
 There are two flags:
