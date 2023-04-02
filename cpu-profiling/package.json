@@ -1,0 +1,19 @@
+{
+  "name": "flamegraphs",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "dd if=/dev/zero of=./file bs=1M count=300",
+  "main": "01_example-simple.js",
+  "scripts": {
+    "start-dummy-server": "mkdir -p output/empty_dir && serve -p 3000 output/empty_dir"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^7.6.0"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.1",
+    "serve": "^14.2.0"
+  }
+}
