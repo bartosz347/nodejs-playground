@@ -1,0 +1,18 @@
+{
+  "name": "bun-playground",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --watch src/index.ts",
+    "typecheck-watch": "tsc --watch",
+    "test": "bun test",
+    "typecheck": "tsc"
+  },
+  "devDependencies": {
+    "bun-types": "latest",
+    "typescript": "^5.2.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
